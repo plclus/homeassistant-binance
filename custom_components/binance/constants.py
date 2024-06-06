@@ -45,7 +45,7 @@ ATTR_LOCKED = "locked"
 ATTR_NATIVE_BALANCE = "native_balance"
 ATTR_NATIVE_UNIT = "native_unit"
 ATTR_TOTAL_REWARDS = "total_rewards"
-QUOTE_ASSETS = ["USD", "BTC", "USDT", "BUSD", "USDC"]
+QUOTE_ASSETS = ["USD", "BTC", "USDT", "BUSD", "USDC", "EUR"]
 UNDO_UPDATE_LISTENER = "undo_update_listener"
 
 
