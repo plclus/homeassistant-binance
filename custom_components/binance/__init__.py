@@ -130,11 +130,9 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     except Exception as e:
         _LOGGER.error(f"Error registering Binance Account device: {e}")
 
-    name = entry.data[CONF_NAME] 
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(
-            entry, "sensor"
-        )
+    name = entry.data[CONF_NAME]
+    await hass.config_entries.async_forward_entry_setups(
+        entry, PLATFORMS
     )
 
     _LOGGER.info(f"Successfully set up Binance config entry: {name}")
